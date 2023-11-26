@@ -1,1 +1,12 @@
-/* место для вашего кода */
+header {
+    display: flex;
+    
+    background-color: aqua;
+}
+
+body {
+    background-color: pink;
+}
+.logo-black {
+    height: 105px;
+}
