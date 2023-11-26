@@ -1,12 +1,41 @@
 header {
     display: flex;
-    
+    width: 1340px;
+    height: 109px;
     background-color: aqua;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    border-style: solid;
+    border-color: #111;
 }
 
 body {
     background-color: pink;
+    margin: 0auto;
 }
-.logo-black {
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote  {
+    margin: 0;
+    padding: 0;
+}
+
+.logo-container {
+    border-style: none;
+    width: 148px;
     height: 105px;
 }
+
+.header-menu {
+    display: flex;
+    list-style-type: circle;
+    flex-direction: row;
+    }
+
+.header-text {
+    color: #111;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}    
