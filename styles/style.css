@@ -57,7 +57,8 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote  {
 .contact {
     display: grid;
     grid-template-rows: 1fr 1fr 2fr;
-    margin-left: 159px;
+    margin-left: 101px;
+    margin-top: 2px;
     height: 105px;
     align-items: center;
     justify-content: center;
@@ -158,10 +159,48 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote  {
     letter-spacing: 0em;
 }
 .subline {
-    background-color: aqua;
+    
     z-index: 5;
+    margin-left: 34px;
+    margin-top: 135px;
+    color: white;
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    
+    
+    
     
 }
 .button {
+    
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 256px;
+height: 51px;
+border: white;
+border-style: solid;
+border-width: 1px;
+margin-left: 713px;
+
+
+
+}
+.subline-text {
+    
+    font-weight: 400;
+    word-spacing: 18px;
+}
+.button-text {
+    text-align: center;
+    
     
 }
