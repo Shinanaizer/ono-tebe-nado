@@ -1,18 +1,18 @@
 header {
-    display: flex;
-    width: 1340px;
-    height: 109px;
-    background-color: aqua;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
-    border-style: solid;
-    border-color: #111;
+    display: grid;
+    width: 1052px;
+    height: 105px;
+    grid-template-columns: 2fr 1fr 2fr;
+    margin: 92px 24px auto 24px;
+    
+    
 }
 
 body {
-    background-color: pink;
-    margin: 0auto;
+    
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    width: 1100px;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote  {
@@ -20,22 +20,148 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote  {
     padding: 0;
 }
 
+
 .logo-container {
-    border-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    width: 148px;
+    height: 105px;
+    margin-left: 36px;
+    
+}
+
+.logo-black {
     width: 148px;
     height: 105px;
 }
 
 .header-menu {
-    display: flex;
-    list-style-type: circle;
-    flex-direction: row;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 105px;
+    align-content: center;
+    justify-content: center;
+    
     }
+.left-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    margin-left: 31px;
+    width: 391.48px;
+    
+}
+
+.contact {
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr;
+    margin-left: 159px;
+    height: 105px;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .header-text {
+    
+    list-style-type: circle;
     color: #111;
     font-family: Raleway;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
+    line-height: 21.13px;
+      
 }    
+
+.first-point {
+    list-style-type: none;
+}
+     
+.underline {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+ 
+.second {
+    position: absolute;
+    width: 1100px;
+    height: 757px;
+    background-image: url(../images/cover.jpg);
+    background-size: cover;
+    margin: 96px 0px auto 0px;
+    z-index: 0;
+    
+}
+
+.overlay {
+    position: relative;
+    width: 1100px;
+    height: 757px;
+    background-color: rgb(0 0 0 / .5);
+    margin: 96px 0px 1978px 0px;
+    z-index: 1;
+
+}
+
+.big-letters {
+    position: absolute;
+    width: 1000px;
+    height: 355px;
+    margin: 165px 50px auto 50px;
+    z-index: 4;
+    
+    padding: 0;
+}
+
+.cover-text {
+    font-family: Raleway;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    color: white;
+    line-height: 1.22;
+}
+
+.ono {
+    display:block;
+    letter-spacing: 0.3em;
+}
+
+.tebe {
+    display:block;
+    text-align:center;
+    letter-spacing: 0.3em;
+    
+}
+
+.nado {
+    display:block;
+    text-align: right;
+    letter-spacing: 0.29em;
+}
+
+.n {
+    letter-spacing: 0.6em;
+}
+
+.b {
+    letter-spacing: 0.6em;
+}
+
+.na {
+    letter-spacing: 0.6em;
+}
+.lasto {
+    letter-spacing: 0em;
+}
+.subline {
+    background-color: aqua;
+    z-index: 5;
+    
+}
+.button {
+    
+}
