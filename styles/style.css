@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, address {
     padding: 0;
 }
 
-.logo-container {
+.header__logo {
     display: flex;
     justify-content: center;
     align-items: center ;
@@ -78,12 +78,14 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, address {
     text-underline-offset: 4px;
 }
  
-.second {
+.cover {
     position: absolute;
     width: 1100px;
     height: 757px;
     background-image: url(../images/cover.jpg);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     margin: 96px 0px auto 0px;
     z-index: 0;
 }
@@ -96,7 +98,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, address {
     z-index: 1;
 }
 
-.big-letters {
+.cover__title {
     position: absolute;
     width: 1000px;
     height: 355px;
@@ -114,33 +116,27 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, address {
     line-height: 1.22;
 }
 
-.ono {
+.aligned-text {
     display:block;
     letter-spacing: 0.3em;
 }
 
-.tebe {
-    display:block;
+.aligned-text_center {
     text-align:center;
-    letter-spacing: 0.29em;
 }
 
-.nado {
-    display:block;
+.aligned-text_right {
     text-align: right;
-    letter-spacing: 0.29em;
 }
 
-.n {
+.letter-spacing-extended {
     letter-spacing: 0.6em;
 }
 
-.na {
-    letter-spacing: 0.6em;
-}
-.lasto {
+.no-letter-spacing {
     letter-spacing: 0em;
 }
+
 .subline {
     z-index: 5;
     margin-left: 32px;
@@ -201,6 +197,8 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, address {
     flex-direction: column;
     justify-content:space-between;
     margin-top: 15px;
+    
+
 }
 
 .lot-header {
