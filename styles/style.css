@@ -12,6 +12,13 @@ body {
     margin: 0;
 }
 
+.page {
+    margin: 0 auto; 
+    padding: 0; 
+    width: 1100px; 
+    text-align: left;
+}
+
 h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, address {
     margin: 0;
     padding: 0;
@@ -33,7 +40,6 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, address {
 }
 
 .header-menu {
-    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     height: 105px;
@@ -197,8 +203,6 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, address {
     flex-direction: column;
     justify-content:space-between;
     margin-top: 15px;
-    
-
 }
 
 .lot-header {
@@ -210,7 +214,6 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, address {
     font-weight: 700;
     line-height: 46.96px;
     text-transform: uppercase;
-
 } 
 
 .film {
