@@ -1,15 +1,9 @@
-header {
+.header {
     display: grid;
     width: 1052px;
-    height: 105px;
+    max-height: 105px;
     grid-template-columns: 2fr 1fr 2fr;
     margin: 95px 28px auto 22px;
-}
-
-body {
-    background-color: rgb(255, 255, 255);
-    min-width: 1100px;
-    margin: 0;
 }
 
 .page {
@@ -19,11 +13,6 @@ body {
     text-align: left;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, address {
-    margin: 0;
-    padding: 0;
-}
-
 .header__logo {
     display: flex;
     justify-content: center;
@@ -31,7 +20,6 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, address {
     width: 148px;
     height: 105px;
     margin-left: 36px;
-    
 }
 
 .logo-black {
@@ -42,7 +30,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, address {
 .header-menu {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    height: 105px;
+    max-height: 105px;
     align-content: center;
     justify-content: center;
 }
@@ -60,7 +48,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, address {
     display: grid;
     grid-template-rows: 1fr 1fr 2fr;
     margin-left: 101px;
-    height: 105px;
+    max-height: 105px;
     align-items: center;
     justify-content: center;
 }
@@ -68,7 +56,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, address {
 .header-text {
     list-style-type: circle;
     color: #111;
-    font-family: Raleway;
+    font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -78,48 +66,37 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, address {
 .first-point {
     list-style-type: none;
 }
-     
+
+.no-underline {
+    text-decoration: none;
+}
+
 .underline {
     text-decoration: underline;
     text-underline-offset: 4px;
 }
- 
-.cover {
-    position: absolute;
-    width: 1100px;
+
+.cover-block {
+    max-width: 1100px;
     height: 757px;
-    background-image: url(../images/cover.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url(../images/cover.jpg) no-repeat center / cover;
     margin: 96px 0px auto 0px;
     z-index: 0;
 }
 
-.overlay {
-    position: relative;
-    width: 1100px;
-    height: 757px;
-    background-color: rgb(0 0 0 / .5);
-    z-index: 1;
-}
-
-.cover__title {
-    position: absolute;
-    width: 1000px;
-    height: 355px;
-    margin: 165px 50px auto 50px;
-    z-index: 4;
-    padding: 0;
-}
-
 .cover-text {
-    font-family: Raleway;
+    position: relative;
+    z-index: 2;
+    font-family: 'Raleway', sans-serif;
     font-size: 100px;
     font-style: normal;
     font-weight: 700;
     color: white;
     line-height: 1.22;
+    text-transform: uppercase;
+    padding-top: 165px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .aligned-text {
@@ -144,11 +121,12 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, address {
 }
 
 .subline {
-    z-index: 5;
-    margin-left: 32px;
-    margin-top: 135px;
+    position: relative;
+    z-index: 2;
+    margin-left: 77px;
+    margin-top: 123px;
     color: white;
-    font-family: Raleway;
+    font-family: 'Raleway', sans-serif;
     font-size: 22px;
     font-weight: 400;
     line-height: 28px;
@@ -160,12 +138,8 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, address {
 }
 
 .button {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 256px;
-    height: 51px;
+    max-width: 256px;
+    max-height: 51px;
     border: white;
     border-style: solid;
     border-width: 1px;
@@ -176,14 +150,38 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, address {
 .subline-text {
     font-weight: 400;
     word-spacing: 18px;
+    text-align: center;
+    max-width: 637px;
 }
 
 .button-text {
     text-align: center;
+    width: 256px;
+    height: 51px;
+    border: white;
+    border-style: solid;
+    border-width: 1px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 25.83px;
+    text-transform: uppercase;
+    background: none;
+    color: white;
+    margin-right: 50px;
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgb(0 0 0 / .5);
+    background-size: cover;
+    width: 1100px;
+    height: 757px;
+    z-index: 1;
 }
 
 .lot-section {
-    margin-top: 1032px;
+    margin-top: 180px;
     margin-left: 24px;
 }
 
@@ -192,8 +190,9 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, address {
     align-items: center;
     justify-content: space-between;
     width: 1052px;
-    height: 692px;
+    min-height: 563px;
     list-style-type: none;
+    margin-top: 24px;
 }
 
 .card {
@@ -201,15 +200,15 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, address {
     height: 563px;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
-    margin-top: 15px;
+    justify-content: space-between;
+    flex-grow: 1;
 }
 
 .lot-header {
-    position: absolute;
+    z-index: 2;
     align-self: flex-start;
     margin-left: 40px;
-    font-family: Raleway;
+    font-family: 'Raleway', sans-serif;
     font-size: 40px;
     font-weight: 700;
     line-height: 46.96px;
@@ -241,7 +240,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, address {
 }
 
 .card-header {
-    font-family: Raleway;
+    font-family: 'Raleway', sans-serif;
     font-size: 22px;
     font-weight: 700;
     line-height: 26.4px;
@@ -257,7 +256,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, address {
 }
 
 .card-text {
-    font-family: Raleway;
+    font-family: 'Raleway', sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
@@ -269,9 +268,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, address {
 }
 
 .link-more {
-    position:absolute;
-    align-self: self-end;
-    font-family: Raleway;
+    font-family: 'Raleway', sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 23.48px;
@@ -279,11 +276,11 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, address {
     text-underline-offset: 5px;
     text-decoration-thickness: 1px;
     margin-left: 40px;
-    margin-bottom: 5px;
+    margin-top: 30px;
 }
 
 .about {
-    height: 595px;
+    max-height: 595px;
     width: 1052px;
     margin-top: 146px;
     margin-left: 24px;
@@ -291,21 +288,24 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, address {
     grid-template-columns: 334px 2fr;
 }
 
-.black-logo {
+.black-circle {
     height: 240px;
     width: 240px;
     background-color: #111;
     margin: 35px auto auto 47px;
     border-radius: 100%;
-    background-image: url(../images/logo-white.svg);
-    background-size: 148px 114px;
-    background-position: center;
-    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-white {
+    width: 148px;
 }
 
 .right-column {
     padding-top: 133px;
-    font-family: Raleway;
+    font-family: 'Raleway', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -313,6 +313,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, address {
 }
 
 .discription {
+    margin-top: 105px;
     display: flex;
     flex-direction: column;
     row-gap: 24px;
@@ -329,12 +330,11 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, address {
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
-      
 }
 
 .footer {
     width: 1000px;
-    height: 98px;
+    max-height: 98px;
     margin-top: 180px;
     margin-bottom: 88px;
     margin-left: 50px;
@@ -351,11 +351,13 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, address {
 }
 
 .link-text {
+    padding-top: 5px;
     list-style-type:none;
-    font-family: Raleway;
+    font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 21.13px;
+    text-align: center;
 }
 
 .social-list {
@@ -363,7 +365,6 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, address {
     display: flex;
     justify-content: space-between;
     width: 240px;
-
 }
 
 .icon {
