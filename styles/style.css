@@ -1,12 +1,12 @@
 .header {
     display: grid;
     width: 1052px;
-    max-height: 105px;
+    min-height: 105px;
     grid-template-columns: 2fr 1fr 2fr;
     margin: 95px 28px auto 22px;
 }
 
-.page {
+.page { 
     margin: 0 auto; 
     padding: 0; 
     width: 1100px; 
@@ -30,7 +30,7 @@
 .header-menu {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    max-height: 105px;
+    min-height: 105px;
     align-content: center;
     justify-content: center;
 }
@@ -48,7 +48,7 @@
     display: grid;
     grid-template-rows: 1fr 1fr 2fr;
     margin-left: 101px;
-    max-height: 105px;
+    min-height: 105px;
     align-items: center;
     justify-content: center;
 }
@@ -77,8 +77,9 @@
 }
 
 .cover-block {
+    position: relative;
     max-width: 1100px;
-    height: 757px;
+    min-height: 757px;
     background: url(../images/cover.jpg) no-repeat center / cover;
     margin: 96px 0px auto 0px;
     z-index: 0;
@@ -157,7 +158,6 @@
 .button-text {
     text-align: center;
     width: 256px;
-    height: 51px;
     border: white;
     border-style: solid;
     border-width: 1px;
@@ -169,14 +169,17 @@
     background: none;
     color: white;
     margin-right: 50px;
+    padding-top: 12px;
+    padding-bottom: 11px;
 }
 
 .overlay {
     position: absolute;
     background-color: rgb(0 0 0 / .5);
-    background-size: cover;
-    width: 1100px;
-    height: 757px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
     z-index: 1;
 }
 
@@ -202,6 +205,7 @@
     flex-direction: column;
     justify-content: space-between;
     flex-grow: 1;
+    
 }
 
 .lot-header {
@@ -219,24 +223,24 @@
     background-image: url(../images/card-lot-01.jpg);
     background-size:cover;
     background-position: center;
+    position: relative;
+    z-index: 0;
 }
 
 .book {
     background-image: url(../images/card-lot-02.jpg);
     background-size:cover;
     background-position: center;
+    position: relative;
+    z-index: 0;
 }
 
 .art {
     background-image: url(../images/card-lot-03.jpg);
     background-size:cover;
     background-position: center;
-}
-.card-overlay {
-    position: absolute;
-    background-color: rgb(0 0 0 / .5);
-    width: 334px;
-    height: 563px;
+    position: relative;
+    z-index: 0;
 }
 
 .card-header {
@@ -268,6 +272,7 @@
 }
 
 .link-more {
+    position: relative;
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -280,7 +285,7 @@
 }
 
 .about {
-    max-height: 595px;
+    min-height: 595px;
     width: 1052px;
     margin-top: 146px;
     margin-left: 24px;
@@ -334,7 +339,7 @@
 
 .footer {
     width: 1000px;
-    max-height: 98px;
+    min-height: 98px;
     margin-top: 180px;
     margin-bottom: 88px;
     margin-left: 50px;
@@ -346,12 +351,12 @@
     line-height: 24.3px;
     width: 240.52px;
 }
+
 .links {
     text-align: center;
 }
 
 .link-text {
-    padding-top: 5px;
     list-style-type:none;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
