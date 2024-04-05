@@ -138,16 +138,6 @@
     max-width: 1100px;
 }
 
-.button {
-    max-width: 256px;
-    max-height: 51px;
-    border: white;
-    border-style: solid;
-    border-width: 1px;
-    margin-left: 713px;
-    box-sizing: border-box;
-}
-
 .subline-text {
     font-weight: 400;
     word-spacing: 18px;
@@ -196,6 +186,7 @@
     min-height: 563px;
     list-style-type: none;
     margin-top: 24px;
+    padding-bottom: 30px;
 }
 
 .card {
@@ -272,7 +263,6 @@
 }
 
 .link-more {
-    position: relative;
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -281,7 +271,6 @@
     text-underline-offset: 5px;
     text-decoration-thickness: 1px;
     margin-left: 40px;
-    margin-top: 30px;
 }
 
 .about {
